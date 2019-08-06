@@ -5,4 +5,4 @@ services:
 before_install:
   - docker build -t marcoshagarcia/globality -f Dockerfile.dev . 
 script:
-  - docker run -e CI=true marcoshagarcia/docker-react npm run test -- --coverage
+  - docker run -e CI=true marcoshagarcia/globality npm run test -- --coverage
